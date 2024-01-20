@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Styled</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="app.js"></script>
+
+
+
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><strong class="logo-text">Styled By Georgia</strong></a>  
+        </div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        
+    </nav>
+
+    <!-- <div class="star">
+        <p>	&#10022;</p>
+    </div> -->
+
+
+    <div class="title">
+        <h1>FEATURED</h1>
+    </div>
+
+
+    <div class="pictures container">
+        <div class="pictures hidden">
+        <img src="images/hair1.jpg">
+        </div>
+        <div class="pictures hidden">
+        <img src="images/hair2.jpg">
+        </div>
+        <div class="pictures hidden">
+        <img src="images/hair3.jpg">
+        </div>
+        <div class="pictures hidden">
+        <img src="images/hair4.jpg">
+        </div>
+
+    </div>
+
+    <div class="part2">
+        <h1>About Me</h1>
+        <p>Hi, I'm Georgia</p>
+        <p>I've recently become a self-employed stylist based at Timeless Hair, Alton.</p>
+        <p>I have been in the industry for seven years and love to create beautiful looking hair;
+        my favourite service is balyage.
+        </p>
+        <p>When I'm not working, I enjoy spending time with my family, friends and puppy Milo.</p>
+    </div>
+
+
+    <div class="salon hidden">
+        <h1>Our Home</h1>
+        <img src="images/salon.webp">
+    </div>
+
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4></h4>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        
+        <div class="col">
+            <img class = "logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><Strong>Address:</Strong>Alton, Hampshire, England</p>
+            <p><Strong>Phone:</Strong> +44 8593 19583</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        
+
+        <div class="col install">
+            <h4></h4>
+            <p></p>
+            <div class="row">
+                
+                
+            </div>
+            <p></p>
+            <img src="" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 All Rights Reserved </p>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        window.onscroll = function() {
+            // Get the navbar element
+            var navbar = document.querySelector('.navbar');
+
+            // Check if the user has scrolled past the navbar, add or remove a class accordingly
+            if (window.scrollY > navbar.offsetTop) {
+                navbar.classList.add('fixed');
+            } else {
+                navbar.classList.remove('fixed');
+            }
+        };
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+/*******************DEFAULT******************/
+
+body{
+    background-color:#F3ECE2; /* Background color set to white */
+    color: black; /* Text color set to black */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 36px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+
+/*******************ANIMATION******************/
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.pictures:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.pictures:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.pictures:nth-child(4) {
+    transition-delay: 200ms;
+}
+
+
+
+/*******************NAVBAR******************/
+
+
+.navbar {
+    background-color: #FBF6F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px; /* Increase padding */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    z-index: 999;
+    position: sticky;
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-links li {
+    margin-right: 100px; /* Increase the gap between navigation links */
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-size: 30px; /* Increase link text size */
+    transition: 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+    color: #088178;
+}
+
+
+/*******************LOGO******************/
+
+
+.logo-text {
+    position: relative;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    color: black;
+    font-weight: 100;
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block; /* Ensure the text stays on one line */
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+
+/*******************STAR******************/
+
+
+.star {
+    font-size: 70px;
+    padding-left: 200px;
+    position: relative; /* Position relative for absolute positioning of the line */
+}
+
+.star::after {
+    content: ''; /* Add content for the pseudo-element */
+    position: absolute; /* Position the line absolutely */
+    top: 54.5%; /* Align the line vertically at the center of the star */
+    margin-left: 52px; /* Adjust the margin to position the line to the right of the star */
+    height: 2px; /* Set the thickness of the line */
+    width: 200px; /* Set the length of the line */
+    background-color: black; /* Set the color of the line */
+    transform: translateY(-50%); /* Center the line vertically */
+}
+.star p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+/*******************FEATURED******************/
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    text-decoration: underline 1px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container img {
+    display: flex;
+    width: 250px;
+    height: auto;
+    margin-right: 30px; /* Adjust the margin to control the gap between images */
+    border-radius: 10px; /* Adjust the border-radius for rounded corners */
+}
+
+
+/*******************PERSONAL MESSAGE******************/
+
+
+.part2 h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    text-decoration: underline 1px;
+}
+
+.part2 p{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+/*******************SALON******************/
+
+
+.salon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.salon h1{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-decoration: underline 1px;
+}
+
+
+.salon img{
+    width: 80%; /* Optional: Make the image take up the full width of the container */
+    border-radius: 80px; /* Optional: Add rounded corners to the image */
+    border-bottom: 20px;
+    padding: 60px;
+}
+
+
+/*******************PAGE BOTTOM******************/
+
+
+.section-p1{
+    padding: 40px 80px;
+    padding-top: 150px;
+}
+
+.section-p1{
+    border-top: 1px solid black;
+    padding-top: 60px;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+   color: #465b52;
+   padding-right: 4px;
+   cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover, footer a:hover{
+    color: #088178;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+/****************************************************/
+/*********************ABOUT PAGE*********************/
+/****************************************************/
+
+
+.boxcontainer {
+    display: flex;
+}
+
+.box {
+    position: relative;
+    width: 700px;
+    height: 900px;
+    background-color: #F3EBE1;
+    color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+.box2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #FEFAF7;
+    z-index: 1; /* Ensure the second box is in front of the first box */
+}
+
+.box3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #F3ECE2;
+    z-index: 1; /* Ensure the second box is in front of the first box */
+}
+
+.box3 img{
+    justify-content: center;
+    padding: 20px;
+    width: 150px;
+    mix-blend-mode: multiply;
+    
+}
+
+.box3 h1{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+}
+
+.days{
+    padding-top: 60px;
+    
+}
+
+.days h4{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.box3text{
+    padding-top: 10px;
+}
+
+
+/*******************LOCATION******************/
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-top: 2px solid black;
+}
+
+.locationcontainer {
+    display: flex;
+    max-width: 800px; /* Set a maximum width for the container if needed */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationinfo, .map {
+    flex: 1;
+    padding: 90px;
+    box-sizing: border-box;
+   
+    
+}
+
+.map {
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Add a background color for better visibility */
+    padding: 10px; /* Add padding to make the border-radius more noticeable */
+}
+
+.locationinfo h4 , p{
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+/****************************************************/
+/*********************SERVICES PAGE******************/
+/****************************************************/
+
+
+.pricecontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.prices, .item {
+    padding-right: 100px; /* Adjust the value as needed */
+    padding-left: 100px;
+    
+}
+
+.prices h4, .item h4{
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+/****************************************************/
+/*********************REVIEWS PAGE******************/
+/****************************************************/
+
+
+.reviewcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewimg img{
+    width: 250px;
+    padding: 100px;
+    border-radius: 110px;
+}
+
+.reviewcomment{
+    padding-top: 200px;
+    width: 450px;
+}
+
+.reviewcomment p{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/****************************************************/
+/*********************CONTACT PAGE******************/
+/****************************************************/
+
+
+div.elem-group {
+    margin: 20px 0;
+    padding-left: 50px;
+}
+
+div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+}
+
+input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    padding: 10px;
+}
+
+div.elem-group input[type="text"],
+div.elem-group input[type="email"],
+div.elem-group input[type="tel"] {
+    width: 220px;
+}
+
+div.elem-group textarea {
+    width: 500px;
+    height: 250px;
+}
+
+div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+}
+
+hr {
+    border: 1px dotted #ccc;
+}
+
+button {
+    height: 50px;
+    background: orange;
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+/*********************************MOBILE*******************************/
+
